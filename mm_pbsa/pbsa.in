@@ -1,0 +1,21 @@
+&general
+sys_name="NMode",
+startframe=80000,
+endframe=100000,
+forcefields="leaprc.protein.ff19SB",
+PBRadii=2,
+temperature = 300.15,
+qh_entropy=1
+/
+&pb
+ipb = 2,
+radiopt=0, istrng=0.150,
+/
+
+
+&decomp
+  idecomp = 2,
+  dec_verbose = 3,
+  print_res = "within 6",
+/
+

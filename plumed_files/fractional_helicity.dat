@@ -1,0 +1,7 @@
+##plumed options to calculate helicity
+MOLINFO STRUCTURE='ref'.pdb				# reference structure
+ALPHARMSD RESIDUES='a-z'  TYPE=DRMSD  LABEL=a0	# residue of interest
+PRINT ARG=a0 FILE='helicity.txt'			# output
+##endofinput
+ENDPLUMED
+

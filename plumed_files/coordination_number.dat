@@ -1,0 +1,11 @@
+# Define atom groups for p53 and MDM2
+p53: GROUP ATOMS='a-z'      				# atoms for p53
+mdm2: GROUP ATOMS='a1-z1'				# atom for MDM2
+
+# Coordination number between p53 and MDM2
+coord: COORDINATION GROUPA=p53 GROUPB=mdm2 R_0=0.35
+
+# Print coordination number every 10 steps
+PRINT ARG=coord FILE='coord.dat'			# output
+
+
